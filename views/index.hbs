@@ -3,10 +3,23 @@
   <head>
     <title> {{title}} </title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   </head>
   <body>
     <h1> {{title}} </h1>
     <p>Welcome to  {{title}} </p>
+
+    <input type="date" name='start' id='start' placeholder="Startdate">
+    <input type="date" name='end' id='end' placeholder="Enddate">
+    <button type="submit" id='button'>Filter</button>
+    
+
+    <canvas id="myChart"></canvas>
+
+
+    <script src="/javascripts/financial-data.js" charset="utf-8"></script>
+
   </body>
-  <script src="/javascripts/financial-data.js" charset="utf-8"></script>
+  
 </html>
